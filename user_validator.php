@@ -36,6 +36,7 @@ class UserValidator {
 
     }
 
+
     private function validateUsername() {
         $val = trim($this->data["username"]);
 
@@ -66,8 +67,8 @@ class UserValidator {
 
 
 
-
     }
+
 
     private function addError($key, $val) {
         $this->errors[$key] = $val;

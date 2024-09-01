@@ -23,7 +23,7 @@ if(isset($_POST["submit"])) {
     <body>
         <div class="new-user">
             <h2> Create new user </h2>
-            <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="POST">
                 <label>Username:</label>
                 <input type="text" name="username" value=<?php echo !empty($_POST['username']) ?             htmlspecialchars($_POST['username']) : ' ' ?>>
                 <div class="error">
